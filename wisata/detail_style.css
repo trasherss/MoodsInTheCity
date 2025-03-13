@@ -1,0 +1,262 @@
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Detail wisata card */
+.detail-wisata {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.detail-wisata:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Header section */
+.wisata-header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.wisata-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.wisata-title {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #ffffff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Info section */
+.wisata-info {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.info-item i {
+    font-size: 18px;
+    color: #ff6b6b;
+    margin-right: 12px;
+    width: 20px;
+}
+
+.info-item span {
+    font-size: 16px;
+}
+
+/* Description section */
+.wisata-description {
+    padding: 30px 20px;
+}
+
+.wisata-description h2 {
+    color: #333333;
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.wisata-description p {
+    color: #666666;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* Gallery section */
+.wisata-gallery {
+    padding: 20px;
+}
+
+.wisata-gallery h2 {
+    color: #333333;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Back button */
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #d35400;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .wisata-image {
+        height: 300px;
+    }
+    
+    .wisata-title {
+        font-size: 2em;
+        bottom: 20px;
+        left: 20px;
+    }
+    
+    .wisata-info {
+        margin: 0 10px;
+        padding: 15px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .back-button {
+        display: block;
+        text-align: center;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wisata-title {
+        font-size: 1.5em;
+    }
+    
+    .info-item {
+        font-size: 14px;
+    }
+    
+    .wisata-description {
+        padding: 20px 15px;
+    }
+    
+    .back-button {
+        display: block;
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    .hero-section {
+        height: 180px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+} 

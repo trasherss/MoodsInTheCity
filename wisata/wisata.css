@@ -1,0 +1,64 @@
+/* Import style dasar */
+@import url('../beranda/style.css');
+
+/* Styling khusus halaman Wisata */
+.page-content {
+    margin-top: 80px;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #f6f6f6 0%, #ffffff 100%);
+}
+
+.wisata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.wisata-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.wisata-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.wisata-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.wisata-info {
+    padding: 1.5rem;
+}
+
+.wisata-info h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.wisata-info p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.detail-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.detail-button:hover {
+    background-color: #2980b9;
+} 

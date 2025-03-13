@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Jember - Pesona Budaya & Wisata</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .wisata-hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/papuma.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .wisata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .wisata-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .wisata-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .wisata-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .wisata-info {
+            padding: 1.5rem;
+        }
+
+        .wisata-info h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .wisata-info p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .detail-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .detail-button:hover {
+            background-color: #d35400;
+        }
+
+        .page-content {
+            margin-top: 0;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">JEMBER</h1>
+            <ul class="nav-links">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../tentang/tentang.html">Tentang</a></li>
+                <li><a href="wisata.html">Wisata</a></li>
+                <li><a href="../berita/berita.html">Berita</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="wisata-hero">
+        <div class="hero-content">
+            <h1>Destinasi Wisata Jember</h1>
+            <p>Jelajahi keindahan alam dan tempat wisata menarik di Jember</p>
+        </div>
+    </header>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="wisata-grid">
+                <div class="wisata-card">
+                    <img src="../images/papuma.jpg" alt="Pantai Papuma">
+                    <div class="wisata-info">
+                        <h3>Pantai Papuma</h3>
+                        <p>Pantai eksotis dengan batu karang unik dan pasir putih yang memukau. Nikmati pemandangan laut yang indah dan pantai yang menyenangkan.</p>
+                        <a href="detail_wisata1.html" class="detail-button">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="wisata-card">
+                    <img src="../images/rembangan.webp" alt="Agrowisata Rembangan">
+                    <div class="wisata-info">
+                        <h3>Agrowisata Rembangan</h3>
+                        <p>Wisata perkebunan dengan pemandangan alam pegunungan yang sejuk. Rasakan kesejukan udara pegunungan dan nikmati hasil perkebunan.</p>
+                        <a href="detail_wisata2.html" class="detail-button">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="wisata-card">
+                    <img src="../images/gambir.jpg" alt="Taman Botani">
+                    <div class="wisata-info">
+                        <h3>Taman Botani</h3>
+                        <p>Taman botani yang asri dengan berbagai koleksi tanaman. Tempat yang sempurna untuk bersantai dan menikmati keindahan alam.</p>
+                        <a href="detail_wisata3.html" class="detail-button">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- About Section -->
+                    <div class="footer-section">
+                        <div class="footer-brand">
+                            <h2 class="footer-logo">JEMBER</h2>
+                            <p class="footer-desc">Jelajahi keindahan alam, budaya, dan kuliner khas Jember. Temukan pengalaman tak terlupakan di kota kami.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h3>Jelajahi</h3>
+                        <ul class="footer-links">
+                            <li><a href="../wisata/wisata.html">Destinasi Wisata</a></li>
+                            <li><a href="../tentang/tentang.html">Tentang Jember</a></li>
+                            <li><a href="../berita/berita.html">Berita Terkini</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h3>Kontak</h3>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jl. Sudarman No.1, Jember, Jawa Timur</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+623311234567">+62877-6589-6637</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:info@jemberkota.go.id">info@jemberkota.go.id</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- Newsletter -->
+                    <div class="footer-section">
+                        <h3>Newsletter</h3>
+                        <p>Dapatkan info terbaru tentang Jember</p>
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Anda" required>
+                                <button type="submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; 2024 Jember Kota. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html> 

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Check ✨</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Typography Updates */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1, h2, h3, #question {
+            font-family: 'Calistoga', cursive;
+        }
+
+        .subtitle, 
+        p, 
+        .option, 
+        .result-content,
+        #mood-score,
+        #recommendation {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Existing back-to-home styles */
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 1000;
+            transition: background-color 0.3s;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+
+        .back-to-home:hover {
+            background-color: #d35400;
+        }
+
+        /* Additional Typography Styling */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h3, #question {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #666;
+        }
+
+        .option {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .btn-start, 
+        .btn-restart {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        #mood-score {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        #recommendation {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-to-home">
+        <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+    </a>
+
+    <div class="container">
+        <header>
+            <h1>Mental Health Check ✨</h1>
+            <p class="subtitle">Hey bestie! Let's check your mental health today 💖</p>
+        </header>
+
+        <div class="quiz-container">
+            <div id="welcome-screen" class="active">
+                <h2>Welcome to Your Safe Space! 🌈</h2>
+                <p>Take a moment to check in with yourself. This quick assessment will help you understand your current mental state better.</p>
+                <button onclick="startQuiz()" class="btn-start">Mulai Check ✨</button>
+            </div>
+
+            <div id="quiz-screen" class="hidden">
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+                <h3 id="question"></h3>
+                <div class="options">
+                    <button class="option" onclick="selectOption(1)">Tidak Pernah</button>
+                    <button class="option" onclick="selectOption(2)">Kadang-kadang</button>
+                    <button class="option" onclick="selectOption(3)">Sering</button>
+                    <button class="option" onclick="selectOption(4)">Selalu</button>
+                </div>
+            </div>
+
+            <div id="result-screen" class="hidden">
+                <h2>Hasil Evaluasi Kamu 📊</h2>
+                <div class="result-content">
+                    <div id="mood-score"></div>
+                    <div id="recommendation"></div>
+                </div>
+                <button onclick="restartQuiz()" class="btn-restart">Cek Lagi 🔄</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
